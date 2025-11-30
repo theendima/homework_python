@@ -1,12 +1,6 @@
 import pytest
 
-@pytest.fixture(scope="session")
-def browser():
-    print("Браузер")
 
-    yield
-
-    print ("Закрываем браузер")
 
 @pytest.fixture
 def login_page(browser):
