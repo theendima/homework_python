@@ -14,13 +14,15 @@ def user():
     return "username", "password"
 
 
-def test_login2(login_page, user):
+def test_login1(login_page, user):
+    print("Логин1")
     username, password = user
     assert username == "username"
     assert password == "password"
 
 
 def test_login(login_page, user):
+    print("Логин2")
     username, password = user
     assert username == "username"
     assert password == "password"
